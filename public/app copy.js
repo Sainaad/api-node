@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
           titleInput.value = '';
           descriptionInput.value = '';
 
+          // Restaurar o texto e event listener do botão de adicionar
           addTaskButton.innerText = "Adicionar";
           addTaskButton.removeEventListener('click', updateTask);
           addTaskButton.addEventListener('click', addTask);
